@@ -4768,6 +4768,7 @@ input[type=radio] {
 }
 .testimonial__meta .testimonial__thmb {
   margin-bottom: 16px;
+
 }
 .testimonial__meta.slick-current {
   opacity: 1;
@@ -4778,7 +4779,7 @@ input[type=radio] {
 }
 
 .testimonial__meta-title {
-  font-size: 16px;
+  font-size: 1.6rem;
   margin-bottom: 4px;
   white-space: nowrap;
 }
@@ -4786,9 +4787,10 @@ input[type=radio] {
 .testimonial__meta-desc {
   position: relative;
   z-index: 2;
-  font-size: 13px;
+  font-size: 1rem;
   line-height: 1;
   margin-bottom: 0;
+  font-weight: 600;
 }
 
 .testimonial__thmb {
@@ -4809,8 +4811,8 @@ input[type=radio] {
 }
 
 .testimonials-layout1 {
-  border-radius: 15px;
-  background-color: #ffffffe8 !important;
+  /* border-radius: 15px; */
+  background-color: #ffffff !important;
   width: 100vw;
   max-width: 100vw;
   
@@ -4830,7 +4832,7 @@ input[type=radio] {
   position: absolute;
   top: -160px;
   left: 0;
-  font-size: 50px;
+  font-size: 70px;
   color: #f6d500;
 }
 
@@ -4891,7 +4893,7 @@ input[type=radio] {
   color: #ffffff;
 }
 .testimonials-layout3 .testimonial__meta-desc {
-  color: #848e9f;
+  color: black;
 }
 .testimonials-layout3 .testimonial__meta.slick-current .testimonial__thmb {
   background-color: #213360;
@@ -4907,15 +4909,17 @@ input[type=radio] {
   position: absolute;
   top: 0;
   left: -10px;
-  width: 143px;
-  height: 95px;
+  width: 168px;
+  height: 110px;
   background-image: url(../images/icons/text-shape.png);
+  background-repeat: no-repeat;
 }
 .testimonials__rating .total__rate {
   font-family: "HelveticaNeue";
   font-size: 38px;
   font-weight: 700;
-  color: #f6d500;
+  color: #213360;
+  z-index: 99;
   margin-right: 10px;
 }
 .testimonials__rating .overall__rate {
@@ -6283,7 +6287,7 @@ textarea.form-control {
     About
 -----------------------*/
 .about__img {
-  position: relative;
+  position: relative !important;
 }
 .about__img img {
   border-radius: 5px;
@@ -6633,7 +6637,7 @@ textarea.form-control {
   transition: all 0.4s linear;
 }
 .service-item .service__content {
-  padding: 40px;
+  padding: 40px 25px;
 }
 .service-item .service__icon {
   color: #213360;

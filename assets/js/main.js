@@ -239,16 +239,30 @@ $(function () {
         arrows: false,
         fade: false,
         dots: true,
-        asNavFor: '.slider-nav'
+        asNavFor: '.slider-nav, .img-bg-slider',
+    });
+
+    $('.img-bg-slider').slick({
+        slideToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.slider-with-navs, .slider-nav',
+        dots: false,
+        arrows: false,
+        centerMode: false,
+        focusOnSelect: true,
+        infinite: true,
+        autoplay: true,
+        fade: true ,
+        cssEase: 'linear'
     });
 
     $('.slider-nav').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        asNavFor: '.slider-with-navs',
+        asNavFor: '.slider-with-navs, .img-bg-slider',
         dots: false,
         arrows: false,
-        centerMode: true,
+        centerMode: false,
         focusOnSelect: true,
         infinite: true,
         autoplay: true

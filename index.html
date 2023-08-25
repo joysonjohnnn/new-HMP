@@ -14,9 +14,119 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    
+.at-about-fab {
+	 z-index: 999999;
+	 position: fixed;
+	 left: 80px;
+	 bottom: 30px;
+	 display: flex;
+	 align-items: center;
+	 flex-direction: row;
+	 transform: translateX(100%);
+	 transition: 0.2s ease;
+	 -webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: grayscale;
+}
+ .at-about-fab:before {
+	 content: "";
+	 position: absolute;
+	 display: block;
+	 top: 50%;
+	 left: -58px;
+	 width: 58px;
+	 height: 48px;
+	 transform: translateY(-50%);
+}
+ .at-about-fab:hover {
+	 transform: translateX(0%);
+}
+ .at-about-fab:hover .at-about-fab__meta {
+	 opacity: 1;
+}
+ .at-about-fab__thumbnail {
+	 position: absolute;
+	 top: 50%;
+	 left: -58px;
+	 background: #0fff37;
+	 width: 48px;
+	 height: 48px;
+	 border: 1px solid #eee;
+	 border-radius: 100%;
+	 padding: 4px;
+	 box-sizing: border-box;
+	 transform: translateY(-50%);
+	 overflow: hidden;
+	 cursor: pointer;
+}
+ .at-about-fab__thumbnail img {
+	 display: block;
+	 width: 100%;
+	 border-radius: 100%;
+}
+ .at-about-fab__meta {
+  font-family: "HelveticaNeue" !important;
+	 opacity: 0;
+	 transition: 0.2s ease;
+}
+ .at-about-fab__meta h2, .at-about-fab__meta p {
+	 margin: 0;
+	 padding: 0;
+}
+ .at-about-fab__meta h2 {
+	 color: #000000;
+	 font-size: 14px;
+	 font-weight: 600;
+}
+ .at-about-fab__meta p {
+	 color: #2c2c2c;
+	 font-size: 12px;
+	 font-weight: 400;
+}
+ .at-about-fab__meta a {
+	 color: inherit;
+	 font-weight: 400;
+	 text-decoration: none;
+}
+ .floating-sec {
+  position: fixed;
+  left: -70px;
+  top: 30vh;
+  height: 55px;
+  width: 30vh;
+  background-color: transparent;
+  z-index: 111;
+  transform: rotate(-90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+.floating-sec-item{
+  padding: 12px;
+  margin: 8px;
+  border-radius: 60%;
+  transform: rotate(90deg);
+  opacity: 0.8;
+  filter: difference(0.5);
+}
+.floating-sec-item:hover{
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+
+  </style>
 </head>
 
 <body style="background-color: #fff;">
+  <div class="at-about-fab" >
+    <a href="https://api.whatsapp.com/send?phone=918928444854&text=I%20Want%20an%20Appointment%20with%20Heath"><div class="at-about-fab__thumbnail">
+      <img alt="Support" src="assets/images/icons/WhatsAppwebp.webp" />
+    </div>
+  </a>
+  </div>
   <div class="wrapper">
     <div class="preloader">
       <div class="loading"><span></span><span></span><span></span><span></span></div>
@@ -33,13 +143,13 @@
               <div class="d-flex align-items-center justify-content-between">
                 <ul class="contact__list d-flex flex-wrap align-items-center list-unstyled mb-0">
                   <li>
-                    <i class="icon-phone"></i><a href="tel:+5565454117">Emergency Line: (002) 01061245741</a>
+                    <i class="icon-phone"></i><a href="tel:+918928444854">+91 8928 444 854 / 855</a>
                   </li>
                   <li>
-                    <i class="icon-location"></i><a href="#">Location: Brooklyn, New York</a>
+                    <i class="icon-location"></i><a href="#">Location: Khar West, Mumbai</a>
                   </li>
                   <li>
-                    <i class="icon-clock"></i><a href="contact-us.html">Mon - Fri: 8:00 am - 7:00 pm</a>
+                    <i class="icon-clock"></i><a href="contact-us.html">Mon - Fri: 6:00 am - 7:00 pm</a>
                   </li>
                 </ul><!-- /.contact__list -->
                 <div class="d-flex">
@@ -72,34 +182,34 @@
               <li class="nav__item has-dropdown">
                 <a href="index.html" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">Home</a>
                 
-              </li><!-- /.nav-item -->
+              </li>
               <li class="nav__item has-dropdown">
                 <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">About Us</a>
                 <ul class="dropdown-menu">
                   <li class="nav__item">
                     <a href="about-us.html" class="nav__item-link">About Us</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
+                  </li>
+                  <!-- <li class="nav__item">
                     <a href="services.html" class="nav__item-link">Our Services</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
+                  </li> -->
+                  <!-- <li class="nav__item">
                     <a href="services-single.html" class="nav__item-link">single Services</a>
-                  </li><!-- /.nav-item -->
+                  </li> -->
                   <li class="nav__item">
                     <a href="pricing.html" class="nav__item-link">Pricing & Plans</a>
-                  </li><!-- /.nav-item -->
+                  </li>
                   <li class="nav__item">
                     <a href="appointment.html" class="nav__item-link">Appointments</a>
-                  </li><!-- /.nav-item -->
+                  </li>
                   <li class="nav__item">
                     <a href="faqs.html" class="nav__item-link">Help & FAQs</a>
-                  </li> <!-- /.nav-item -->
+                  </li> 
                   <li class="nav__item">
                     <a href="gallery.html" class="nav__item-link">Our Gallery</a>
-                  </li><!-- /.nav-item -->
+                  </li>
                 </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item has-dropdown">
+              </li>
+              <li class="nav__item has-dropdown d-none">
                 <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Doctors</a>
                 <ul class="dropdown-menu">
                   <li class="nav__item">
@@ -115,38 +225,38 @@
                     <a href="doctors-grid.html" class="nav__item-link">Our Doctors Grid</a>
                   </li> <!-- /.nav-item -->
                   <li class="nav__item">
-                    <a href="doctors-single-doctor1.html" class="nav__item-link">Single Doctor 01</a>
+                    <a href="blog-single-post.html" class="nav__item-link">Single Doctor 01</a>
                   </li> <!-- /.nav-item -->
                   <li class="nav__item">
                     <a href="doctors-single-doctor2.html" class="nav__item-link">Single Doctor 02</a>
                   </li> <!-- /.nav-item -->
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
-              <li class="nav__item has-dropdown">
+              <!-- <li class="nav__item has-dropdown">
                 <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Blog</a>
                 <ul class="dropdown-menu">
                   <li class="nav__item">
                     <a href="blog.html" class="nav__item-link">Blog Grid</a>
-                  </li><!-- /.nav-item -->
+                  </li>
                   <li class="nav__item">
                     <a href="blog-single-post.html" class="nav__item-link">Single Blog Post</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item has-dropdown">
+                  </li>
+                </ul>
+              </li> -->
+              <!-- <li class="nav__item has-dropdown">
                 <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Shop</a>
                 <ul class="dropdown-menu">
                   <li class="nav__item">
                     <a href="shop.html" class="nav__item-link">Our Products</a>
-                  </li><!-- /.nav-item -->
+                  </li>
                   <li class="nav__item">
                     <a href="shop-single-product.html" class="nav__item-link">Products Single</a>
-                  </li><!-- /.nav-item -->
+                  </li>
                   <li class="nav__item">
                     <a href="cart.html" class="nav__item-link">Cart</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
+                  </li>
+                </ul>
+              </li> -->
               <li class="nav__item">
                 <a href="contact-us.html" class="nav__item-link">Contacts</a>
               </li><!-- /.nav-item -->
@@ -176,8 +286,8 @@
               </li><!-- /.nav-item -->
             </ul> <!-- /.miniPopup-departments -->
             <a href="appointment.html" class="btn btn__primary btn__rounded ml-30">
-              <i class="icon-calendar"></i>
-              <span>Appointment</span>
+              <span>Get Started</span>
+              <i class="fas fa-angle-right"></i>
             </a>
           </div>
         </div><!-- /.container -->
@@ -201,33 +311,33 @@
       #background-video {
         width: 100vw;
         height: 100vh;
-        object-fit: cover;
+        object-fit: cover ;
         position: fixed;
         left: 0;
         right: 0;
-        top: 0;
+        top: 85px;
         bottom: 0;
         z-index: -1;
       }
     </style>
     <section style="height: 100vh;margin-bottom: 20vh;">
       <div class="video-header">
-        <video id="background-video" src="assets/images/sliders/hero-bg.mp4" autoplay loop playsinline muted></video>
+        <video id="background-video" src="assets/images/sliders/hero-bg1.mp4" autoplay loop playsinline muted></video>
       </div>
     </section>
 
     <!-- ========================
       About Layout 1
     =========================== -->
-    <section class="about-layout1" style="background-color: #ffffff69 ;backdrop-filter: blur(18px);padding-bottom: 12vh;">
+    <!-- <section class="about-layout1" style="background-color: #ffffff69 ;backdrop-filter: blur(18px);padding-bottom: 12vh;">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-6">
             <div class="heading-layout2">
               <h3 class="heading__title mb-40">Improving The Quality Of Your Life Through Better Health.</h3>
-            </div><!-- /heading -->
-          </div><!-- /.col-12 -->
-        </div><!-- /.row -->
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-6">
             <div class="about__Text">
@@ -243,44 +353,44 @@
                 <img src="assets/images/logo.png" alt="singnture" width="120px">
               </div>
             </div>
-          </div><!-- /.col-lg-6 -->
+          </div>
           <div class="col-sm-12 col-md-12 col-lg-6">
             <div class="video-banner">
               <img src="assets/images/about/bg-hero.jpg" alt="about">
-              <a class="video__btn video__btn-white popup-video" href="https://www.youtube.com/watch?v=nrJtHemSPW4">
+              <a class="video__btn video__btn-white popup-video" href="assets/images/sliders/hero-bg1.mp4">
                 <div class="video__player">
                   <i class="fa fa-play"></i>
                 </div>
               </a>
-            </div><!-- /.video-banner -->
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.About Layout 1 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
 
     <!-- ======================
     Features Layout 1
     ========================= -->
-    <section class="features-layout1 pt-130 pb-50 mt--90">
-      <div class="bg-img"><img src="assets/images/backgrounds/1.jpg" alt="background"></div>
+    <section class="features-layout1 pt-130 pb-50 mt--90" style="background-color: #d1d1d169 ;backdrop-filter: blur(6px);">
+      <!-- <div class="bg-img" style="background-color: #ffffff69 ;backdrop-filter: blur(18px);"></div> -->
       <div class="container">
         <div class="row mb-40">
           <div class="col-sm-12 col-md-12 col-lg-5">
             <div class="heading__layout2">
-              <h3 class="heading__title">LIVE YOUR BEST LIFE WITH HMP</h3>
+              <h3 class="heading__title" style="font-size: 3.5rem;">LIVE YOUR BEST LIFE WITH HMP</h3>
             </div>
           </div><!-- /col-lg-5 -->
           <div class="col-sm-12 col-md-12 col-lg-5 offset-lg-1">
-            <p class="heading__desc font-weight-bold">We have a strong foundation in physiotherapy, built from years of experience on the field and in the clinic. We believe that movement is medicine, and our approach is results focused, with emphasis on understanding your unique goals and challenges. At HMP, we look beyond isolated joint or muscle pains to offer a holistic service, integrating physical and emotional wellbeing to help you live your best life.  
+            <p class="heading__desc font-weight-bold" style="color: black;">We have a strong foundation in physiotherapy, built from years of experience on the field and in the clinic. We believe that movement is medicine, and our approach is results focused, with emphasis on understanding your unique goals and challenges. At HMP, we look beyond isolated joint or muscle pains to offer a holistic service, integrating physical and emotional wellbeing to help you live your best life.  
             </p>
             <div class="d-flex flex-wrap align-items-center mt-40 mb-30">
-              <a href="appointment.html" class="btn btn__primary btn__rounded mr-30">
-                <span>Make Appointment</span>
+              <a href="appointment.html" class="btn btn__secondary btn__rounded mr-30">
+                <span>Book Appointment</span>
                 <i class="icon-arrow-right"></i>
               </a>
               <a href="#" class="btn btn__secondary btn__link">
                 <i class="icon-arrow-right icon-filled"></i>
-                <span>Download the App</span>
+                <span>Subscribe Now</span>
               </a>
             </div>
           </div><!-- /.col-lg-6 -->
@@ -291,6 +401,7 @@
             opacity: 0.2;
             scale: 1.1;
             transition: all 0.5s linear;
+            
           }
           .feature-img-hover {
             position: absolute;
@@ -302,6 +413,10 @@
           }
           .feature-img {
             width: 60px;
+          }
+          .feature-item:hover {
+            border-bottom: 8px solid yellow;
+            cursor: pointer;
           }
         </style>
 
@@ -315,16 +430,17 @@
                 <div class="feature__icon">
                   <!-- <i class="icon-heart"></i>
                     <i class="icon-heart feature__overlay-icon"></i> -->
-                    <img src="assets/images/logos/stock/physiotherapy.png" class="feature-img-hover" alt="">
+                    <!-- <img src="assets/images/logos/stock/physiotherapy.png" class="feature-img-hover" alt=""> -->
                     <img src="assets/images/logos/stock/physiotherapy.png" class="feature-img" alt="">
-                </div>
-                <h4 class="feature__title">Physiotherapy</h4>
-              </div><!-- /.feature__content -->
-              <a href="#" class="btn__link">
-                <i class="icon-arrow-right icon-outlined"></i>
-              </a>
-            </div><!-- /.feature-item -->
-          </div><!-- /.col-lg-3 -->
+                  </div>
+                  <h4 class="feature__title">Physiotherapy</h4>
+                </div><!-- /.feature__content -->
+                <a href="#" class="btn__link">
+                  <i class="icon-arrow-right icon-outlined"></i>
+                </a>
+              </div><!-- /.feature-item -->
+              
+            </div><!-- /.col-lg-3 -->
           <!-- Feature item #2 -->
           <div class="col-sm-6 col-md-6 col-lg-3">
             <div class="feature-item">
@@ -349,7 +465,7 @@
                 <div class="feature__icon">
                   <!-- <i class="icon-ambulance"></i>
                   <i class="icon-ambulance feature__overlay-icon"></i> -->
-                  <img src="assets/images/logos/stock/strength.png" class="feature-img-hover" alt="">
+                  <!-- <img src="assets/images/logos/stock/strength.png" class="feature-img-hover" alt=""> -->
                     <img src="assets/images/logos/stock/strength.png" class="feature-img" alt="">
                 </div>
                 <h4 class="feature__title">Strength & Conditioning</h4>
@@ -366,7 +482,7 @@
                 <div class="feature__icon">
                   <!-- <i class="icon-drugs"></i>
                   <i class="icon-drugs feature__overlay-icon"></i> -->
-                  <img src="assets/images/logos/stock/massage.png" class="feature-img-hover" alt="">
+                  <!-- <img src="assets/images/logos/stock/massage.png" class="feature-img-hover" alt=""> -->
                     <img src="assets/images/logos/stock/massage.png" class="feature-img" alt="">
                 </div>
                 <h4 class="feature__title">Deep Tissue Massage</h4>
@@ -383,7 +499,7 @@
                 <div class="feature__icon">
                   <!-- <i class="icon-first-aid-kit"></i>
                   <i class="icon-first-aid-kit feature__overlay-icon"></i> -->
-                  <img src="assets/images/logos/stock/nutrition.png" class="feature-img-hover" alt="">
+                  <!-- <img src="assets/images/logos/stock/nutrition.png" class="feature-img-hover" alt=""> -->
                     <img src="assets/images/logos/stock/nutrition.png" class="feature-img" alt="">
                 </div>
                 <h4 class="feature__title">Health & Nutrition Coaching</h4>
@@ -400,7 +516,7 @@
                 <div class="feature__icon">
                   <!-- <i class="icon-hospital"></i>
                   <i class="icon-hospital feature__overlay-icon"></i> -->
-                  <img src="assets/images/logos/stock/acupuncture.png" class="feature-img-hover" alt="">
+                  <!-- <img src="assets/images/logos/stock/acupuncture.png" class="feature-img-hover" alt=""> -->
                     <img src="assets/images/logos/stock/acupuncture.png" class="feature-img" alt="">
                 </div>
                 <h4 class="feature__title">Acupuncture</h4>
@@ -417,7 +533,7 @@
                 <div class="feature__icon">
                   <!-- <i class="icon-expenses"></i>
                   <i class="icon-expenses feature__overlay-icon"></i> -->
-                  <img src="assets/images/logos/stock/yoga.png" class="feature-img-hover" alt="">
+                  <!-- <img src="assets/images/logos/stock/yoga.png" class="feature-img-hover" alt=""> -->
                   <img src="assets/images/logos/stock/yoga.png" class="feature-img" alt="">
                 </div>
                 <h4 class="feature__title">Yoga</h4>
@@ -434,7 +550,7 @@
                 <div class="feature__icon">
                   <!-- <i class="icon-bandage"></i>
                   <i class="icon-bandage feature__overlay-icon"></i> -->
-                  <img src="assets/images/logos/stock/hypno.png" class="feature-img-hover" alt="">
+                  <!-- <img src="assets/images/logos/stock/hypno.png" class="feature-img-hover" alt=""> -->
                     <img src="assets/images/logos/stock/hypno.png" class="feature-img" alt="">
                 </div>
                 <h4 class="feature__title">Hypno Birthing</h4>
@@ -502,7 +618,7 @@
                     <img src="assets/images/programs/acl-knee-2.jpg" alt="img" loading="lazy">
                   </div><!-- /.service__img -->
                   <div class="service__content">
-                    <h4 class="service__title">Knee Fitness Program</h4>
+                    <h4 class="service__title">Knee Fitness <br/>Program</h4>
                     <p class="service__desc">All cardiologists study the disorders of the heart, but the study of adult
                       and
                       child heart disorders are trained to take care of small children and adult heart disease.
@@ -600,7 +716,15 @@
     <!-- ======================
       Team
     ========================= -->
-    <section class="team-layout1 pb-80" style="background-color: #fff;">
+    <style>
+      #team .slick-next {
+        right: -45px !important;
+      }
+      #team .slick-prev {
+        left: -45px !important;
+      }
+    </style>
+    <section class="team-layout1 pb-80" style="background-color: #fff;" id="team">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
@@ -621,18 +745,18 @@
                 <div class="member__img">
                   <img src="assets/images/team/1.jpg" alt="member img">
                   <ul class="social-icons list-unstyled mb-0">
-                    <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#" class="phone"><i class="fas fa-phone-alt"></i></a></li>
+                    <!-- <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li> -->
+                    <li><a href="#" class="phone"><i class="fas fa-calendar"></i></a></li>
                   </ul><!-- /.social-icons -->
                 </div><!-- /.member-img -->
                 <div class="member__info">
-                  <h5 class="member__name"><a href="doctors-single-doctor1.html">Physio Name</a></h5>
+                  <h5 class="member__name"><a href="blog-single-post.html">Physio Name</a></h5>
                   <p class="member__job">Senior Physiotherapist</p>
                   <p class="member__desc">Muldoone obtained his undergraduate degree in Biomedical Engineering at Tulane
                     University prior to attending St George's University School of Medicine</p>
                   <div class="mt-20 d-flex flex-wrap justify-content-between align-items-center">
-                    <a href="doctors-single-doctor1.html" class="btn btn__secondary btn__link btn__rounded">
+                    <a href="blog-single-post.html" class="btn btn__secondary btn__link btn__rounded">
                       <span>Read More</span>
                       <i class="icon-arrow-right"></i>
                     </a>
@@ -644,9 +768,9 @@
                 <div class="member__img">
                   <img src="assets/images/team/Heath-resize.png" alt="member img" width="100%" >
                   <ul class="social-icons list-unstyled mb-0">
-                    <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#" class="phone"><i class="fas fa-phone-alt"></i></a></li>
+                    <!-- <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li> -->
+                    <li><a href="#" class="phone"><i class="fas fa-calendar"></i></a></li>
                   </ul><!-- /.social-icons -->
                 </div><!-- /.member-img -->
                 <div class="member__info">
@@ -667,9 +791,9 @@
                 <div class="member__img">
                   <img src="assets/images/team/3.jpg" alt="member img">
                   <ul class="social-icons list-unstyled mb-0">
-                    <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#" class="phone"><i class="fas fa-phone-alt"></i></a></li>
+                    <!-- <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li> -->
+                    <li><a href="#" class="phone"><i class="fas fa-calendar"></i></a></li>
                   </ul><!-- /.social-icons -->
                 </div><!-- /.member-img -->
                 <div class="member__info">
@@ -690,19 +814,19 @@
                 <div class="member__img">
                   <img src="assets/images/team/4.jpg" alt="member img">
                   <ul class="social-icons list-unstyled mb-0">
-                    <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#" class="phone"><i class="fas fa-phone-alt"></i></a></li>
+                    <!-- <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li> -->
+                    <li><a href="#" class="phone"><i class="fas fa-calendar"></i></a></li>
                   </ul><!-- /.social-icons -->
                 </div><!-- /.member-img -->
                 <div class="member__info">
-                  <h5 class="member__name"><a href="doctors-single-doctor1.html">Physio Name</a></h5>
+                  <h5 class="member__name"><a href="blog-single-post.html">Physio Name</a></h5>
                   <p class="member__job">Senior Physiotherapist</p>
                   <p class="member__desc">Black diagnose and treat diseases of the urinary tract in both men and women.
                     He
                     also diagnose and treat anything involving the reproductive tract in men.</p>
                   <div class="mt-20 d-flex flex-wrap justify-content-between align-items-center">
-                    <a href="doctors-single-doctor1.html" class="btn btn__secondary btn__link btn__rounded">
+                    <a href="blog-single-post.html" class="btn btn__secondary btn__link btn__rounded">
                       <span>Read More</span>
                       <i class="icon-arrow-right"></i>
                     </a>
@@ -714,18 +838,18 @@
                 <div class="member__img">
                   <img src="assets/images/team/5.jpg" alt="member img">
                   <ul class="social-icons list-unstyled mb-0">
-                    <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#" class="phone"><i class="fas fa-phone-alt"></i></a></li>
+                    <!-- <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li> -->
+                    <li><a href="#" class="phone"><i class="fas fa-calendar"></i></a></li>
                   </ul><!-- /.social-icons -->
                 </div><!-- /.member-img -->
                 <div class="member__info">
-                  <h5 class="member__name"><a href="doctors-single-doctor1.html">Physio Name</a></h5>
+                  <h5 class="member__name"><a href="blog-single-post.html">Physio Name</a></h5>
                   <p class="member__job">Senior Physiotherapist</p>
                   <p class="member__desc">Skar play a very important role in your health care. People working in the
                     clinical laboratory are responsible for conducting tests that provide crucial information.</p>
                   <div class="mt-20 d-flex flex-wrap justify-content-between align-items-center">
-                    <a href="doctors-single-doctor1.html" class="btn btn__secondary btn__link btn__rounded">
+                    <a href="blog-single-post.html" class="btn btn__secondary btn__link btn__rounded">
                       <span>Read More</span>
                       <i class="icon-arrow-right"></i>
                     </a>
@@ -737,18 +861,18 @@
                 <div class="member__img">
                   <img src="assets/images/team/6.jpg" alt="member img">
                   <ul class="social-icons list-unstyled mb-0">
-                    <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#" class="phone"><i class="fas fa-phone-alt"></i></a></li>
+                    <!-- <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li> -->
+                    <li><a href="#" class="phone"><i class="fas fa-calendar"></i></a></li>
                   </ul><!-- /.social-icons -->
                 </div><!-- /.member-img -->
                 <div class="member__info">
-                  <h5 class="member__name"><a href="doctors-single-doctor1.html">Physio Name</a></h5>
+                  <h5 class="member__name"><a href="blog-single-post.html">Physio Name</a></h5>
                   <p class="member__job">Senior Physiotherapist</p>
                   <p class="member__desc">Barker help care for patients every day by providing their doctors with the
                     information needed to ensure appropriate care. He also valuable resources for other physicians.</p>
                   <div class="mt-20 d-flex flex-wrap justify-content-between align-items-center">
-                    <a href="doctors-single-doctor1.html" class="btn btn__secondary btn__link btn__rounded">
+                    <a href="blog-single-post.html" class="btn btn__secondary btn__link btn__rounded">
                       <span>Read More</span>
                       <i class="icon-arrow-right"></i>
                     </a>
@@ -882,7 +1006,7 @@
           <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-5">
               <div class="heading-layout2">
-                <h3 class="heading__title mb-80 text-center">LIVE YOUR LIFE BEST WITH HMP</h3>
+                <h3 class="heading__title mb-80">LIVE YOUR LIFE BEST WITH HMP</h3>
               </div><!-- /heading -->
               <div class="map-wrapper mb-50">
                 <img src="assets/images/logo.png" alt="map">
@@ -916,6 +1040,39 @@
                   </div><!-- /.tooltip__panel -->
                 </div><!-- /.tooltip-box -->
               </div><!-- /.map-wrapper -->
+
+
+              <style>
+                #myVideo{
+          position: absolute;
+          width: 37%;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          /* margin: 0 auto; */
+          z-index: 1;
+        }
+        #left-ss {
+          position: relative;
+          overflow: hidden;
+          z-index: 99;
+        }
+      </style>
+              </style>
+
+              <div class="wrapper-ss" id="left-ss">
+                <img src="assets/images/backgrounds/ss1.jpg" alt="" class="exclusive-image" style="position: relative;z-index: 999;overflow: hidden;" />
+                <video autoplay muted loop id="myVideo">
+                  <source src="assets/images/backgrounds/ss1.mp4" type="video/mp4">
+                  <!-- <source src="./videos/ss.mov" type="video/mov"> -->
+                </video>
+              
+              
+            </div>
+
+
+
+
             </div><!-- /.col-lg-6 -->
             <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1">
               <p class="heading__desc color-secondary font-weight-bold mb-30">We will work with you to develop
@@ -929,11 +1086,13 @@
                 improving the quality of life through better health.</p>
               <div class="d-flex align-items-center mb-60">
                 <a href="contact-us.html" class="btn btn__secondary btn__rounded mr-30">
-                  <i class="fas fa-heart"></i> <span>Make A Gift</span>
+                  <i class="fas fa-calendar"></i> <span>Book an Appointment</span>
                 </a>
+                <b class="mr-30">or</b>
                 <a href="contact-us.html" class="btn btn__secondary btn__outlined btn__rounded mr-30">
-                  More About Us
+                  Download HMP App
                 </a>
+                <i>Anytime, Anywhere</i>
               </div>
               <ul class="list-items list-items-layout3 list-unstyled">
                 <li>We conduct a range of tests to help us work out why you're not feeling well and determine the right
@@ -943,6 +1102,40 @@
                 <li>We offer a wide range of care and support to our patients, from diagnosis to treatment and
                   rehabilitation.</li>
               </ul>
+              <style>
+                .app-icons {
+display: flex;
+align-items: center;
+}
+.vertical {
+width: 300px;
+flex-direction: column;
+}
+
+.android {
+width: 180px;
+}
+.apple {
+width: 150px;
+}
+              </style>
+              
+             
+<div class="app-icons">
+<a href="https://apps.apple.com/app/id1551353775">
+  <img 
+    class="apple"
+    src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1276560000&h=7e7b68fad19738b5649a1bfb78ff46e9" 
+    alt="Download on the App Store">
+</a>
+<a href='https://play.google.com/store/apps/details?id=com.stagescycling.stages'>
+  <img 
+    class="android" 
+    alt='Get it on Google Play' 
+    src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' />
+</a>
+
+</div>
             </div><!-- /.col-lg-6 -->
           </div><!-- /.row -->
         </div><!-- /.container -->
@@ -954,6 +1147,14 @@
     <!-- ========================= 
       Testimonials layout 1
       =========================  -->
+      <style>
+        .img-bg-slider {
+          position: absolute;
+          width: 70%;
+          right: 0;
+          opacity: 1;
+        }
+      </style>
       <section class="testimonials-layout1 pt-130 pb-80">
         <div class="container" >
           <div class="testimonials-wrapper" >
@@ -961,33 +1162,41 @@
               <div class="col-sm-12 col-md-12 col-lg-7 offset-lg-5">
                 <div class="heading-layout2">
                   <h3 class="heading__title">Inspiring Stories!</h3>
-                </div><!-- /.heading -->
-              </div><!-- /.col-lg-7 -->
+                </div>
+              </div>
               <div class="col-sm-12 col-md-12 col-lg-5">
-                <div class="slider-nav mb-60">
+                <div class="img-bg-slider">
+                  <img src="assets/images/testimonials/thumbs/1.jpg">
+                  <img src="assets/images/testimonials/thumbs/2.jpg">
+                  <img src="assets/images/testimonials/thumbs/3.jpg">
+                  <img src="assets/images/testimonials/thumbs/6.jpg">
+                  <img src="assets/images/testimonials/thumbs/4.jpg">
+                  <img src="assets/images/testimonials/thumbs/7.jpg">
+                </div>
+                <div class="slider-nav mt-60">
                   <div class="testimonial__meta">
-                    <div class="testimonial__thmb">
+                    <!-- <div class="testimonial__thmb">
                       <img src="assets/images/testimonials/thumbs/1.jpg" alt="author thumb">
-                    </div><!-- /.testimonial-thumb -->
+                    </div> -->
                     <div>
                       <h4 class="testimonial__meta-title">Sachin Tendulkar</h4>
                       <p class="testimonial__meta-desc">Retired Indian Cricketer</p>
                     </div>
-                  </div><!-- /.testimonial-meta -->
+                  </div>
                   <div class="testimonial__meta">
-                    <div class="testimonial__thmb">
+                    <!-- <div class="testimonial__thmb">
                       <img src="assets/images/testimonials/thumbs/2.jpg" alt="author thumb">
-                    </div><!-- /.testimonial-thumb -->
+                    </div> -->
                     <div>
                       <h4 class="testimonial__meta-title">Virat Kohli</h4>
                       <p class="testimonial__meta-desc">Indian Cricketer</p>
                     </div>
-                  </div><!-- /.testimonial-meta -->
+                  </div>
 
                   <div class="testimonial__meta">
-                    <div class="testimonial__thmb">
+                    <!-- <div class="testimonial__thmb">
                       <img src="assets/images/testimonials/thumbs/3.jpg" alt="author thumb">
-                    </div><!-- /.testimonial-thumb -->
+                    </div> -->
                     <div>
                       <h4 class="testimonial__meta-title">Anushka Sharma</h4>
                       <p class="testimonial__meta-desc">Actor, India </p>
@@ -996,9 +1205,9 @@
                   
                   
                   <div class="testimonial__meta">
-                    <div class="testimonial__thmb">
+                    <!-- <div class="testimonial__thmb">
                       <img src="assets/images/testimonials/thumbs/6.jpg" alt="author thumb">
-                    </div><!-- /.testimonial-thumb -->
+                    </div> -->
                     <div>
                       <h4 class="testimonial__meta-title">Akshay Kumar</h4>
                       <p class="testimonial__meta-desc">Actor, India  </p>
@@ -1007,29 +1216,29 @@
                   
                   
                   <div class="testimonial__meta">
-                    <div class="testimonial__thmb">
+                    <!-- <div class="testimonial__thmb">
                       <img src="assets/images/testimonials/thumbs/4.jpg" alt="author thumb">
-                    </div><!-- /.testimonial-thumb -->
+                    </div> -->
                     <div>
-                      <h4 class="testimonial__meta-title">Sonia Blake</h4>
-                      <p class="testimonial__meta-desc">Web Inc</p>
+                      <h4 class="testimonial__meta-title">Ajay Jayaram</h4>
+                      <p class="testimonial__meta-desc">International Badminton Player, BWF </p>
                     </div>
                   </div>
                   
                   
                   <div class="testimonial__meta">
-                    <div class="testimonial__thmb">
+                    <!-- <div class="testimonial__thmb">
                       <img src="assets/images/testimonials/thumbs/7.jpg" alt="author thumb">
-                    </div><!-- /.testimonial-thumb -->
+                    </div> -->
                     <div>
-                      <h4 class="testimonial__meta-title">Sonia Blake</h4>
-                      <p class="testimonial__meta-desc">Web Inc</p>
+                      <h4 class="testimonial__meta-title">Khurshid Mistry</h4>
+                      <p class="testimonial__meta-desc">National Champion</p>
                     </div>
                   </div>
                   
                   
-                </div><!-- /.slider-nav -->
-              </div><!-- /.col-lg-5 -->
+                </div>
+              </div>
               <div class="col-sm-12 col-md-12 col-lg-7">
                 <div class="slider-with-navs">
                   <!-- Testimonial #1 -->
@@ -1087,18 +1296,18 @@
                 </div><!-- /.slick-carousel -->
                 <div class="testimonials__rating">
                   <div class="testimonials__rating-inner d-flex align-items-center">
-                    <span class="total__rate">4.9</span>
+                    <span class="total__rate" >5.0</span>
                     <div>
-                      <span class="overall__rate">Zocdoc Overall Rating</span>
+                      <span class="overall__rate">HMP Overall Rating</span>
                       <span>, based on 7541 reviews.</span>
                     </div>
-                  </div><!-- /.testimonials__rating-inner -->
-                </div><!-- /.testimonials__rating -->
-              </div><!-- /.col-lg-7 -->
-            </div><!-- /.row -->
-          </div><!-- /.testimonials-wrapper -->
-        </div><!-- /.container -->
-      </section><!-- /.testimonials layout 1 -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
   
@@ -1111,7 +1320,7 @@
             <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
               <div class="heading text-center mb-40">
                 <h2 class="heading__subtitle">Resource Library</h2>
-                <h3 class="heading__title">Recent Articles</h3>
+                <h3 class="heading__title">HMP Library</h3>
               </div><!-- /.heading -->
             </div><!-- /.col-lg-6 -->
           </div><!-- /.row -->
@@ -1262,10 +1471,10 @@
                   <li>If you have any questions or need help, feel free to contact with our team.</li>
                   <li>
                     <a href="tel:01061245741" class="phone__number">
-                      <i class="icon-phone"></i> <span>01061245741</span>
+                      <i class="icon-phone"></i> <span>+91 8928 444 854 / 855</span>
                     </a>
                   </li>
-                  <li class="color-body">2307 Beverley Rd Brooklyn, New York 11226 United States.</li>
+                  <li class="color-body">501, Grand Imperial Apartments, 16th Rd, Khar West, Mumbai, Maharashtra 400052</li>
                 </ul>
                 <div class="d-flex align-items-center">
                   <a href="contact-us.html" class="btn btn__primary btn__link mr-30">

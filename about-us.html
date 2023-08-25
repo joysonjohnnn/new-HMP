@@ -222,11 +222,41 @@
     <!-- ========================
        page title 
     =========================== -->
-    <section class="page-title page-title-layout1 bg-overlay">
-      <div class="bg-img"><img src="assets/images/page-titles/1.jpg" alt="background"></div>
+    <section class="page-title page-title-layout1 bg-overlay" style="margin-top: 20vh; padding-top: 80vh !important;padding-bottom: 0;">
+      <!-- <div class="bg-img" style="background-size: contain !"><img src="assets/images/team/heath-gif.gif" alt="background" style="background-size: contain !important;"></div> -->
+      <style>
+        .video-bg {
+          width: 100vw;
+          height: 100vh;
+        }
+        .video-header {
+          position: relative;
+          display: flex;
+          object-fit: fill;
+        }
+  
+        #background-video {
+          width: 100vw;
+          height: 100vh;
+          object-fit: contain ;
+          position: relative;
+          left: 0;
+          right: 0;
+          top: 85px;
+          bottom: 0;
+          z-index: -1;
+        }
+      </style>
+      
+    <section style="height: 100vh;margin-bottom: 20vh;">
+      <div class="video-header">
+        <img id="background-video" src="assets/images/team/heath-gif.gif" >      
+      </div>
+    </section>
+
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
+          <!-- <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
             <h1 class="pagetitle__heading">Caring For The Health & Well Being Of Family.</h1>
             <p class="pagetitle__desc">Medcity has been present in Europe since 1990, offering innovative
               solutions, specializing in medical services for treatment of medical infrastructure.
@@ -241,7 +271,8 @@
                 <i class="icon-arrow-right"></i>
               </a>
             </div>
-          </div><!-- /.col-xl-5 -->
+          </div> -->
+          <div class="customized" style="margin-top: 20vh;margin-bottom: 50vh;"></div>
         </div><!-- /.row -->
       </div><!-- /.container -->
     </section><!-- /.page-title -->
@@ -268,9 +299,9 @@
                 chronic diseases. We are committed to being the region’s premier healthcare network providing patient
                 centered care that inspires clinical and service excellence.</p>
               <div class="d-flex align-items-center mb-30">
-                <a href="doctors-grid.html" class="btn btn__primary btn__outlined btn__rounded mr-30">
-                  Meet Our Doctors</a>
-                <img src="assets/images/about/singnture.png" alt="singnture">
+                <a href="doctors-grid.html" class="btn btn__secondary btn__outlined btn__rounded mr-30">
+                  Book Appointment Now</a>
+                <img src="assets/images/logo.png" width="100px" alt="logo">
               </div>
             </div>
           </div><!-- /.col-lg-6 -->
@@ -484,6 +515,9 @@
             </ul>
           </div><!-- /.col-xl-6 -->
         </div><!-- /.row -->
+        <style>
+
+        </style>
         <div class="row">
           <div class="col-12">
             <div class="carousel-container mt-90">
@@ -493,14 +527,15 @@
                 <div class="process-item">
                   <span class="process__number">01</span>
                   <div class="process__icon">
-                    <i class="icon-health-report"></i>
+                    <!-- <i class="icon-health-report"></i> -->
+                      <img src="assets/images/logos/stock/acupuncture.png" width="72px" />
                   </div><!-- /.process__icon -->
-                  <h4 class="process__title">Fill In Our Medical Application</h4>
+                  <h4 class="process__title">Accupuncture</h4>
                   <p class="process__desc">Medcity offers low-cost health coverage for adults with limited income, you
                     can
                     enroll.</p>
                   <a href="#" class="btn btn__secondary btn__link">
-                    <span>Doctors’ Timetable</span>
+                    <span>Get Started</span>
                     <i class="icon-arrow-right"></i>
                   </a>
                 </div><!-- /.process-item -->
@@ -508,13 +543,15 @@
                 <div class="process-item">
                   <span class="process__number">02</span>
                   <div class="process__icon">
-                    <i class="icon-dna"></i>
+                    <!-- <i class="icon-dna"></i> -->
+                    <img src="assets/images/logos/stock/strength.png" width="72px" />
+
                   </div><!-- /.process__icon -->
-                  <h4 class="process__title">Review Your Family Medical History</h4>
-                  <p class="process__desc">Regular health exams can help find all the problems, also can find it early
+                  <h4 class="process__title">Strength & Conditioning</h4>
+                  <p class="process__desc">Regular health find it early
                     chances.</p>
                   <a href="#" class="btn btn__secondary btn__link">
-                    <span>Start A Check Up</span>
+                    <span>Get Started</span>
                     <i class="icon-arrow-right"></i>
                   </a>
                 </div><!-- /.process-item -->
@@ -522,14 +559,16 @@
                 <div class="process-item">
                   <span class="process__number">03</span>
                   <div class="process__icon">
-                    <i class="icon-medicine"></i>
+                    <!-- <i class="icon-medicine"></i> -->
+                    <img src="assets/images/logos/stock/yoga.png" width="72px" />
+
                   </div><!-- /.process__icon -->
-                  <h4 class="process__title">Choose Between Our Care Programs</h4>
+                  <h4 class="process__title">Advanced Yoga</h4>
                   <p class="process__desc">We have protocols to protect our patients while continuing to provide
                     necessary
                     care.</p>
                   <a href="#" class="btn btn__secondary btn__link">
-                    <span>Explore Programs</span>
+                    <span>Get Started</span>
                     <i class="icon-arrow-right"></i>
                   </a>
                 </div><!-- /.process-item -->
@@ -537,13 +576,15 @@
                 <div class="process-item">
                   <span class="process__number">04</span>
                   <div class="process__icon">
-                    <i class="icon-stethoscope"></i>
+                    <!-- <i class="icon-stethoscope"></i> -->
+                    <img src="assets/images/logos/stock/massage.png" width="72px" />
+                  
                   </div><!-- /.process__icon -->
-                  <h4 class="process__title">Introduce You To Highly Qualified Doctors</h4>
+                  <h4 class="process__title">Deep Tissue Massage</h4>
                   <p class="process__desc">Our administration and support staff have exceptional skills and trained to
                     assist you. </p>
                   <a href="#" class="btn btn__secondary btn__link">
-                    <span>Meet Our Doctors</span>
+                    <span>Get Started</span>
                     <i class="icon-arrow-right"></i>
                   </a>
                 </div><!-- /.process-item -->
@@ -551,13 +592,15 @@
                 <div class="process-item">
                   <span class="process__number">05</span>
                   <div class="process__icon">
-                    <i class="icon-head"></i>
+                    <!-- <i class="icon-head"></i> -->
+                    <img src="assets/images/logos/stock/sound.jpg" width="72px" />
+
                   </div><!-- /.process__icon -->
-                  <h4 class="process__title">Your custom Next process</h4>
+                  <h4 class="process__title">Sound Therapy</h4>
                   <p class="process__desc">Our administration and support staff have exceptional skills to assist you.
                   </p>
                   <a href="#" class="btn btn__secondary btn__link">
-                    <span>Meet Our Doctors</span>
+                    <span>Get Started</span>
                     <i class="icon-arrow-right"></i>
                   </a>
                 </div><!-- /.process-item -->
@@ -566,21 +609,25 @@
           </div><!-- /.col-12 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
-      <div class="cta bg-primary">
+      <div class="cta" style="background-color:  rgb(44, 44, 44);">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-sm-12 col-md-2 col-lg-2">
-              <img src="assets/images/icons/alert.png" class="cta__img" alt="alert">
+            <div class="col-sm-12 col-md-3 col-lg-3">
+              <img src="assets/images/logo.png" class="cta__img" alt="logo">
             </div><!-- /.col-lg-2 -->
-            <div class="col-sm-12 col-md-7 col-lg-7">
-              <h4 class="cta__title">True Healthcare For Your Family!</h4>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                    <i class="icon-quote" style="font-size: 2.4rem;color: #f6d500;position: absolute; left: -22px; top: -14px;"></i>
+                    <h4 class="cta__title text-canter">  MOVEMENT IS MEDICINE </h4>
+                    <p style="color: white;font-size: 10px;text-align: center;">~ Health Matthews</p>
+                    <i class="icon-quote"  style="font-size: 2rem;color: #f6d500;position: absolute; right: 18%; top: 0;transform: rotate(180deg);"></i>
+
               <p class="cta__desc">Serve the community by improving the quality of life through better health. We have
                 put protocols to protect our patients and staff while continuing to provide medically necessary care.
               </p>
             </div><!-- /.col-lg-7 -->
             <div class="col-sm-12 col-md-12 col-lg-3">
               <a href="appointment.html" class="btn btn__secondary btn__secondary-style2 btn__rounded mr-30">
-                <span>Healthcare Programs</span>
+                <span>Subscribe Now</span>
                 <i class="icon-arrow-right"></i>
               </a>
             </div><!-- /.col-lg-3 -->
@@ -825,7 +872,8 @@
               </div><!-- /.slick-carousel -->
               <div class="testimonials__rating">
                 <div class="testimonials__rating-inner d-flex align-items-center">
-                  <span class="total__rate">4.9</span>
+                  
+                  <span class="total__rate">5.0</span>
                   <div>
                     <span class="overall__rate">Zocdoc Overall Rating</span>
                     <span>, based on 7541 reviews.</span>
