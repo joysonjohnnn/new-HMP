@@ -1,0 +1,57 @@
+{
+  "draw": 1,
+  "recordsTotal": 7,
+  "recordsFiltered": 7,
+  "code": 200,
+  "data": [
+    {
+      "id": 144,
+      "fake_id": 1,
+      "name": "MOUKODI ELONG  GERTRUDE",
+      "email": "yankamkelore@gmail.com",
+      "email_verified_at": null
+    },
+    {
+      "id": 131,
+      "fake_id": 2,
+      "name": "John Doe",
+      "email": "johndoe@user.com",
+      "email_verified_at": null
+    },
+    {
+      "id": 116,
+      "fake_id": 3,
+      "name": "Guest",
+      "email": "guest@guest.com",
+      "email_verified_at": null
+    },
+    {
+      "id": 132,
+      "fake_id": 4,
+      "name": "Epepe",
+      "email": "abc@gmail.com",
+      "email_verified_at": null
+    },
+    {
+      "id": 82,
+      "fake_id": 5,
+      "name": "Duncan",
+      "email": "duncan@duncan.com",
+      "email_verified_at": null
+    },
+    {
+      "id": 129,
+      "fake_id": 6,
+      "name": "Akampurira Brian David",
+      "email": "akampsbrio@gmail.com",
+      "email_verified_at": null
+    },
+    {
+      "id": 130,
+      "fake_id": 7,
+      "name": "Admin",
+      "email": "admin@admin.com",
+      "email_verified_at": null
+    }
+  ]
+}
