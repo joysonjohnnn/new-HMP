@@ -82,7 +82,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #ffffff;
   font-family: "HelveticaNeue";
-  font-size: 14px;
+  font-size: 16px;
   color: #848e9f;
   overflow-x: hidden;
 }
@@ -3664,7 +3664,7 @@ input[type=radio] {
 .footer .footer-primary {
   padding-top: 85px;
   padding-bottom: 60px;
-  background-color: #1d2a4d;
+  background-color: #2e385c ;
 }
 .footer .footer-secondary {
   position: relative;
@@ -3724,7 +3724,7 @@ input[type=radio] {
 .footer .footer-widget-nav li a {
   display: block;
   position: relative;
-  color: #848e9f;
+  color: #ffffff;
   font-size: 14px;
   margin-bottom: 11px;
 }
@@ -3732,7 +3732,7 @@ input[type=radio] {
   color: #f6d500;
 }
 .footer .footer__copyright-links li a {
-  color: #848e9f;
+  color: #353535;
   display: block;
   margin-right: 25px;
   padding: 3px 0;
