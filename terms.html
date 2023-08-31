@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="HMP - Towards Wellness">
+  <link href="assets/images/logo.png" rel="icon">
+  <title>Heath Matthews Physio - Towards Wellness</title>
+
+  <link rel="stylesheet"
+    href="assets/fonts/Comfortaa.woff2">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link rel="stylesheet" href="assets/css/libraries.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    
+.at-about-fab {
+	 z-index: 999999;
+	 position: fixed;
+	 left: 80px;
+	 bottom: 30px;
+	 display: flex;
+	 align-items: center;
+	 flex-direction: row;
+	 transform: translateX(100%);
+	 transition: 0.2s ease;
+	 -webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: grayscale;
+}
+ .at-about-fab:before {
+	 content: "";
+	 position: absolute;
+	 display: block;
+	 top: 50%;
+	 left: -58px;
+	 width: 58px;
+	 height: 48px;
+	 transform: translateY(-50%);
+}
+ .at-about-fab:hover {
+	 transform: translateX(0%);
+}
+ .at-about-fab:hover .at-about-fab__meta {
+	 opacity: 1;
+}
+ .at-about-fab__thumbnail {
+	 position: absolute;
+	 top: 50%;
+	 left: -58px;
+	 background: #0fff37;
+	 width: 48px;
+	 height: 48px;
+	 border: 1px solid #eee;
+	 border-radius: 100%;
+	 padding: 4px;
+	 box-sizing: border-box;
+	 transform: translateY(-50%);
+	 overflow: hidden;
+	 cursor: pointer;
+}
+ .at-about-fab__thumbnail img {
+	 display: block;
+	 width: 100%;
+	 border-radius: 100%;
+}
+ .at-about-fab__meta {
+  font-family: "HelveticaNeue" !important;
+	 opacity: 0;
+	 transition: 0.2s ease;
+}
+ .at-about-fab__meta h2, .at-about-fab__meta p {
+	 margin: 0;
+	 padding: 0;
+}
+ .at-about-fab__meta h2 {
+	 color: #000000;
+	 font-size: 14px;
+	 font-weight: 600;
+}
+ .at-about-fab__meta p {
+	 color: #2c2c2c;
+	 font-size: 12px;
+	 font-weight: 400;
+}
+ .at-about-fab__meta a {
+	 color: inherit;
+	 font-weight: 400;
+	 text-decoration: none;
+}
+ .floating-sec {
+  position: fixed;
+  left: -70px;
+  top: 30vh;
+  height: 55px;
+  width: 30vh;
+  background-color: transparent;
+  z-index: 111;
+  transform: rotate(-90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+.floating-sec-item{
+  padding: 12px;
+  margin: 8px;
+  border-radius: 60%;
+  transform: rotate(90deg);
+  opacity: 0.8;
+  filter: difference(0.5);
+}
+.floating-sec-item:hover{
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+
+  </style>
+</head>
+
+<body style="background-color: #fff;">
+  <div class="at-about-fab" >
+    <a href="https://api.whatsapp.com/send?phone=918928444854&text=I%20Want%20an%20Appointment%20with%20Heath"><div class="at-about-fab__thumbnail">
+      <img alt="Support" src="assets/images/icons/WhatsAppwebp.webp" />
+    </div>
+  </a>
+  </div>
+  <div class="wrapper">
+    <div class="preloader">
+      <div class="loading"><span></span><span></span><span></span><span></span></div>
+    </div><!-- /.preloader -->
+
+    <!-- =========================
+        Header
+    =========================== -->
+    <header class="header header-layout2">
+      <div class="header-topbar">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div class="d-flex align-items-center justify-content-between">
+                <ul class="contact__list d-flex flex-wrap align-items-center list-unstyled mb-0">
+                  <li>
+                    <i class="icon-phone"></i><a href="tel:+918928444854">+91 8928 444 854 / 855</a>
+                  </li>
+                  <li>
+                    <i class="icon-location"></i><a href="https://goo.gl/maps/tC4RTNhbB2qDcujL8" target="_blank">Location: Khar West, Mumbai</a>
+                  </li>
+                  <!-- <li>
+                    <i class="icon-clock"></i><a href="contact-us.html">Mon - Fri: 6:00 am - 7:00 pm</a>
+                  </li> -->
+                </ul><!-- /.contact__list -->
+                <div class="d-flex">
+                  <ul class="social-icons list-unstyled mb-0 mr-30">
+                    <li><a href="https://www.instagram.com/hm_heathmatthewsphysio/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/heathmatthewsphysioofficial" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com/Jiofit1" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/c/HeathMatthews" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/heathmatthewsphysio" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                  </ul><!-- /.social-icons -->
+                  <form class="header-topbar__search">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <button class="header-topbar__search-btn"><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div><!-- /.col-12 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.header-top -->
+      <nav class="navbar navbar-expand-lg sticky-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo.png" class="logo-light" alt="logo" width="150">
+            <img src="assets/images/logo.png" class="logo-dark" alt="logo" width="150">
+          </a>
+          <button class="navbar-toggler" type="button">
+            <span class="menu-lines"><span></span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav__item">
+                <a href="index.html" class="nav__item-link active">Home</a>
+               </li>
+              
+              <li class="nav__item has-dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">About Us</a>
+                <ul class="dropdown-menu">
+                  <li class="nav__item">
+                    <a href="about-us.html" class="nav__item-link">About Us</a>
+                  </li>
+                  <!-- <li class="nav__item">
+                    <a href="services.html" class="nav__item-link">Our Services</a>
+                  </li> -->
+                  <!-- <li class="nav__item">
+                    <a href="services-single.html" class="nav__item-link">single Services</a>
+                  </li> -->
+                  <li class="nav__item">
+                    <a href="pricing.html" class="nav__item-link">Pricing & Plans</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="appointment.html" class="nav__item-link">Appointments</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="faqs.html" class="nav__item-link">Help & FAQs</a>
+                  </li> 
+                  <li class="nav__item">
+                    <a href="gallery.html" class="nav__item-link">Our Gallery</a>
+                  </li>
+                </ul><!-- /.dropdown-menu -->
+              </li>
+              
+              <!-- <li class="nav__item has-dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Blog</a>
+                <ul class="dropdown-menu">
+                  <li class="nav__item">
+                    <a href="blog.html" class="nav__item-link">Blog Grid</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="blog-single-post.html" class="nav__item-link">Single Blog Post</a>
+                  </li>
+                </ul>
+              </li> -->
+              <!-- <li class="nav__item has-dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Shop</a>
+                <ul class="dropdown-menu">
+                  <li class="nav__item">
+                    <a href="shop.html" class="nav__item-link">Our Products</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="shop-single-product.html" class="nav__item-link">Products Single</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="cart.html" class="nav__item-link">Cart</a>
+                  </li>
+                </ul>
+              </li> -->
+              <li class="nav__item">
+                <a href="contact-us.html" class="nav__item-link">Contact Us</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="index.html" class="nav__item-link">Login</a>
+               </li>
+            </ul><!-- /.navbar-nav -->
+            <button class="close-mobile-menu d-block d-lg-none"><i class="fas fa-times"></i></button>
+          </div><!-- /.navbar-collapse -->
+          <button class="action__btn-search ml-30"><i class="fa fa-search"></i></button>
+          <div class="d-xl-flex align-items-center position-relative ml-0">
+            <a href="appointment.html" class="btn btn__primary btn__rounded ml-30">
+              <span>Get Started</span>
+              <i class="fas fa-angle-right"></i>
+            </a>
+          </div>
+        </div><!-- /.container -->
+      </nav><!-- /.navabr -->
+    </header><!-- /.Header -->
+
+    <style>
+         
+        #first-main {
+
+           width: 80vw;
+           text-align: center !important;
+           margin: 10vh auto;
+
+        }
+
+        p {
+
+           text-align: justify !important;
+
+        }
+
+
+
+       </style>
+
+<div class="container" id="first-main">
+          
+    <div class="testimonial-area-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-title-2 text-center bar-theme-color">
+                        <h3 class="font-family-class" style="font-size: 40px; text-align: center;">
+                            TERMS &amp; CONDITIONS
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" style="text-align: center;">
+        <div class="row justify-content-center pl-2 pr-2" style="text-align: center;">
+            <p>
+    Welcome to availing and accessing the services of HeathMatthewsPhysio.com and all of its sub domains and/or sub website and/or web pages (hereinafter collectively known as the “Website”. This Website is owned and operated by “Heath Matthews Physio” having its registered address at HMJ Health Pvt. Ltd., 308, Apeejay House, 130, Shahid Bhagat Singh Marg, Mumbai, Maharashtra 400 001, India (hereinafter referred to as “Heath Matthews Physio, “we” or “us”). Heath Matthews Physio provides this site to you subject to the following Terms and Conditions (hereinafter referred to as the Terms) along with the Disclaimer and all other applicable laws and regulations stated hereunder. You must carefully read and understand the Terms before accessing, availing and using this Website, you understand that by visiting this Website you accept the below stated Terms. The Terms mentioned below is a complete guide to avail the access to this Website. These Terms are applicable to individual’s and entity’s irrespective of whether you have a subscription (which means that you can access the Website without limitation), are a “visitor” (which means that you use the Website without being a registered member), or are a member (which means that you have registered with the Website) also be termed also “you”, “your”, “users”, “each a user” shall be read in the context. Website related and other health partner related service including, without limitation, to products offered for sale are collectively called as “Services”. By using or accessing the Website or by registering yourself as a user on this Website or by viewing / accessing any information or content from the Website you agree to be bound by these Terms.<br>
+
+    In an event where you represent an entity i.e. an organization, company or branch of government, you warrant that you have an expressed authority to legally bind an organization, company or branch of government with the obligations and restrictions of these Terms. Henceforth any references herein to “you” or “your” will include of your company or organization.<br>
+
+    IF YOU DO NOT AGREE TO THE TERMS OF THE AGREEMENT OR DO NOT HAVE THE AUTHORITY TO BIND YOUR ORGANIZATION OR COMPANY TO THESE TERMS OF THE AGREEMENT, THEN DO NOT ACCESS, AVAIL OR USE THE SERVICES OF THIS WEBSITE.<br>
+    <br>
+    </p><h4>1. ABOUT OUR WEBSITE</h4><br>
+<p>
+    Heath Matthews Physio is a unique Platform that primarily focuses to help people recover from common injuries by offering instructional rehabilitation videos &amp; various goods relating to the same. Heath Matthews Physio is under the process of expanding its fitness targeted rehabilitation programs to include knee, back, shoulder, neck, ankle, hip, elbow and wrist related injuries as well specific sports fitness programs. Heath Matthews Physio is a unique platform that helps people affected by injury, illness or disability through movement and exercise, manual therapy, education and advice. Heath Matthews Physio maintains health for people of all ages, helping patients to manage pain and prevent disease. Heath Matthews Physio helps to encourage development and facilitate recovery, enabling people to stay in work while helping them to remain independent for as long as possible. Heath Matthews Physio also offers a Digital Health Management platform for its users/members that allows users/members to digitally upload their own medical data also communicate remotely with their concerned health management health partner/team of health partner. Along with this Heath Matthews Physio also helps in searching for qualified Health Professionals who are associated to us. Heath Matthews Physio also helps in booking appointments with the said Health Professionals and Heath Matthews Physio also helps in doing online consultations with health partner Health Professionals, access Heath Matthews Physio’s health and fitness library for up to date and accurate information on injuries, fitness and general health and wellness of its members.<br>
+</p><br>
+    <h4>2. YOUR LICENCE AND USE OF THE WEBSITE</h4><br>
+<p>
+    Subject to the terms and conditions of this Agreement and your payment of any required fees. The Services and contents provided on the Website are the property of Heath Matthews Physio and/or Heath Matthews Physio’s licensors, and Heath Matthews Physio grants you only a limited, non-exclusive, revocable license to make personal and non-commercial use of the Website unless agreed otherwise through an agreement and to receive the media content made available through the Website, based on the type of account you hold.<br>
+    Heath Matthews Physio’s Services including but not limited to Videos are licensed, not sold, to you, and Heath Matthews Physio retains ownership of all its Services offered on the Website including but not limited to exercise videos. Heath Matthews Physio may assign these Agreements or any part of them without restrictions. You may not assign these Agreements or any part of them, nor transfer or sub-license your rights under this license, to any third party.
+    You acknowledge and concede that you shall not store, advertise, copy, modify, distribute, send, transmit, display, make available or otherwise communicate to the public any unauthorized use of copyright protected contents offered on the Website including but not limited to by way of reproduction, distribution, modification, adaptation, public display, public performance, preparation of derivative works, making available or otherwise communicating to the public or use the contents of Services offered on the Website for commercial purpose which may constitute an infringement of third party rights.<br>
+    Further you acknowledge and concede that any contents offered on the Website is subjected to proprietary or other rights of third parties including any Intellectual Property Rights. Such Contents shall not be distributed, reproduced, downloaded, transmitted, re-uploaded, republished, displayed, sold, licensed, made available or otherwise communicated to the public or exploited for any purposes.
+    <br>
+</p><br>
+    <h4>3. ELIGIBILITY</h4><br>
+<p>
+    Use and access to the Website and registration to be a Member is available to all persons who have attained the age of majority i.e. is or above 18 years of age, can be legally bound, is of sound mind and who are not disqualified or declared incompetent under the Indian Contract Act, 1872. A minor i.e. under the age of 18 years, you shall not register as a user of the Website and shall not access, transact on or use the Website. If a minor wish to use, access, transact or use the Website, such use, access or transact shall be made by your parents or your legal guardian. Heath Matthews Physio reserves the right to terminate your membership and/or refuse to provide you with access to the Website if it is brought to Heath Matthews Physio’s notice or if it is discovered that you are under the age of 18 years. Heath Matthews Physio does not take any kind of responsibility if any of the conditions are not complied with.<br>
+</p><br>
+    <h4>4. REGISTRATION AND PURCHASE TERMS</h4><br>
+<p>
+    This Website allows you to Register. You can choose not to register with us, except that it may restrict you from accessing and participate in certain Website related activities and transactions / Premium Services which would be available only to our Registered Account Holders. However, to make use of our Services offered for a price on this Website registration is mandatory. To register yourself as a Member to this Website, to be able to purchase, access and use the Services offered, you shall fill in a registration form by providing the necessary information. All the information provided by you in the required field in the form shall be true to the best of your knowledge. You shall be responsible for maintaining the confidentiality of your username and password and be responsible for all the activities that occur with respect to your account. You agree that if you have provided any inaccurate, inappropriate, untrue information, not in accordance with the Terms, Heath Matthews Physio shall have the sole discretion to cancel, remove, terminate, refuse to provide access and/or suspend your account and membership with the Website and/or any of the Services, without prior notice, which, in our sole discretion would or might constitute a violation of this Agreement, or an infringement or violation of the rights of any third party, or of any applicable laws or regulations. Heath Matthews Physio further, reserves the right in its sole discretion to restrict, amend, suspend access to any products previously offered for sale by Heath Matthews Physio, without prior notice.<br>
+</p><br>
+    <h4>5. CONTENT/ACTIVITY PROHIBITED</h4><br>
+<p>
+    You agree, undertake and confirm that your use of the Website shall be strictly governed by including, without limitation, the following:<br>
+    1. You shall not reformat or frame any portion of any web page that is part of the Website;<br>
+
+    2. You shall not post advertisements, promotions or solicitations of business or solicit users or post spam or any other form of solicitation or spam; post or transmit any communication or solicitation designed or intended to obtain the password, account or private information from any other user;<br>
+
+    3. You shall not distribute any contents that includes code hidden or otherwise contained within the contents which is unrelated to the contents;<br>
+
+    4. You shall not alter or modify any part of the Website and use the Website for any illegal purpose;<br>
+
+    5. You shall not rent, sell or transfer or lease or offer to sell or transfer access to the Website and/or any Heath Matthews Physio account or permit any third parties to use your name and password, or any contents on the Website. You must not use or attempt to use another person's account, password, or other information, unless you have express permission from that other person;<br>
+
+    6. You shall not violate or attempt to violate Heath Matthews Physio systems or interfere with the normal use of the Website by users; import any files from unlawful sources into the service and/or upload and share hyperlinks that point to information on the web that violates the law, the private rights of anyone else or these Terms;<br>
+
+    7. You shall not resale or commercially use the Website or its contents, or download or copy account information for the benefit of yourself or any third-party. The Website is for personal use only and may not be reproduced, duplicated, copied, sold, resold, visited, or otherwise exploited for any commercial purpose;<br>
+
+    8. You shall not deliberately impersonate another person, whether real or fictional or otherwise misrepresent your affiliation with a person or entity, for example, by registering an account in the name of another person or company, or sending messages or making comments using the name of another person impersonate other users or otherwise fake your identity;<br>
+
+    9. You shall not collect or harvest or attempt to collect personal data, or any other kind of information about other users, including without limitation, through spidering or any form of scraping;<br>
+
+    10. You shall not copy, rip, download or capture, or attempt to copy, rip, download or capture, any audio or video content from the Website or any part of the Website;<br>
+
+    11. You shall at all times ensure full compliance with the applicable provisions of the Information Technology Act, 2000 and rules there under as applicable and as amended from time to time and also all applicable Domestic laws, rules and regulations (including the provisions of any applicable Exchange Control Laws or Regulations in Force) and International Laws, Foreign Exchange Laws, Statutes, Ordinances and Regulations (including, but not limited to Sales Tax/VAT, Income Tax, Service Tax, Central Excise, Custom Duty, Local Levies) regarding Your use of Our service and Your listing, purchase, solicitation of offers to purchase, and sale of products or services. You shall not engage in any transaction in an item or service, which is prohibited by the provisions of any applicable law including exchange control laws or regulations for the time being in force;<br>
+
+    12. You shall not alter or remove, attempt to alter or remove any trademark,
+    copyright or other proprietary or legal notices contained in, or appearing on, the Website or any contents appearing on the Website. You may not frame or utilize framing techniques to enclose any trademark, logo, or other proprietary information (including images, content, music, text, page layout, or form) of Heath Matthews Physio and our health partners or other Users. You may not use any meta-tags or any other "hidden text" utilizing Heath Matthews Physio's name or trademarks without the express written consent of Heath Matthews Physio. Any unauthorized use terminates the permission or license granted by Heath Matthews Physio. You may not use any Heath Matthews Physio logo or other proprietary graphic or trademark as part of the link without Heath Matthews Physio's advanced express written permission;<br>
+
+    13. You shall not stalk, exploit, threaten, abuse or otherwise harass another user, or any Heath Matthews Physio employee;<br>
+
+    14. You shall not, in person and/or permit any third party to, copy or adapt the object code of the Website, or reverse engineer, reverse assemble, decompile, modify or attempt to discover any source or object code of any part of the Website, or circumvent or attempt to circumvent or copy any copy protection mechanism or access any rights management information pertaining to contents;<br>
+
+    15. You shall not, in person and/or permit any third party to, copy or adapt the object code of the Website, or reverse engineer, reverse assemble, decompile, modify or attempt to discover any source or object code of any part of the Website, or circumvent or attempt to circumvent or copy any copy protection mechanism or access any rights management information pertaining to contents;<br>
+
+    16. You shall not employ scraping or similar techniques to aggregate, repurpose, adapt, copy, republish, make available or otherwise communicate to the public, display, perform, transfer, share, distribute or otherwise use or exploit any content on or otherwise make use of any reverse-engineer, decompile, disassemble, modify or create derivative works based on the Heath Matthews Physio service or any software, code or other part thereof;<br>
+
+    17. You shall not transmit any viruses, worms, defects, Trojan horse, cancel bots, spyware, other items of a contaminating or destructive nature, denial of service attacks, adware, packet or IP spoofing, forged routing or electronic mail address information or similar methods or technology harmful code, flood pings, malware, bot, time bomb, worm, or other harmful or malicious component, which or might overburden, impair or disrupt the Website or servers or networks forming part of, or connected to, the Website, or which does or might restrict or inhibit any other user's use and enjoyment of the Website;<br>
+
+    18. You agree to comply with the above conditions and acknowledge that Heath Matthews Physio has the right, in its sole discretion, to terminate your account or take action as in our sole discretion is necessary if you breach any of the above conditions or any of the other provisions of this Terms;<br>
+
+    19. You understand that we have the right at all times to disclose any information (including the identity of the persons providing information or materials on the Website) as necessary to satisfy any law, regulation or valid governmental request. This may include, without limitation, disclosure of the information in connection with investigation of alleged illegal activity or solicitation of illegal activity or in response to a lawful court order. In addition, we can (and you hereby expressly authorize us to) disclose any information about you to law enforcement or other government officials, as we, in our sole discretion, believe necessary or appropriate in connection with the investigation and/or resolution of possible crimes, especially those that may involve personal injury;
+    Throughout these Terms, Heath Matthews Physio’s prior written consent means a communication coming from Heath Matthews Physio’s Legal Department, specifically in response to your request, and specifically addressing the activity or conduct for which you seek authorization.<br>
+</p><br>
+    <h4>6. COMMUNICATIONS</h4><br>
+<p>
+    When you send e-mails to us, you understand that you are communicating with us electronically. You consent to receive communications via electronic records from us periodically and as and when required. We may communicate with you by e-mail, SMS, phone call and / by any other mode of communication. However, we do not assure any confidentiality or security of information provided to us from your side.<br>
+</p><br>
+    <h4>7. THIRD-PARTY CONTENTS</h4><br>
+<p>
+    The Website may provide access to third party websites that are not owned or controlled by Heath Matthews Physio. Heath Matthews Physio is not responsible for any user content, third-party content, applications, services, advertisements, and/or links that may be contained in the Service. All text, graphics, user interfaces, visual interfaces, photographs, trademarks, logos, sounds, music and artwork (collectively, "Content"), is a third-party user generated Content and Heath Matthews Physio has no control over such third-party user generated Content as Heath Matthews Physio is merely an intermediary for the purposes of this Terms.
+    <br>
+</p><br>
+    <h4>8. TERMINATION, CANCELLATION AND REFUND</h4><br>
+<p>
+    These Terms, and henceforth revision posted of these terms, shall remain in full force and effect while you use the Website and certain provisions may continue to apply even after termination. If you do not agree to any such changes, you have the discretion to discontinue from accessing, availing or using the Website and/or any of the services. Continued access or use of the Website and/or any of the Services following notice of any such changes will indicate your acknowledgement of such changes and you will be bound by such revised Terms.<br>
+    A Registered Member may terminate / cancel his membership at any time for any reason by deleting your account with Heath Matthews Physio. By choosing to terminate your Membership, you acknowledge and expressly agree that all of your profile content and other information may be deleted. However, certain details will be maintained with us for archival and legal purposes. Continued access or use of the Website and/or any of the Services following notice of any such changes will indicate your acknowledgement of such changes and you will be bound by such revised Terms.<br>
+    You understand and agree that Heath Matthews Physio reserves the right to restrict, amend, suspend your access to any products previously offered to you and / or, at its sole discretion, without prior notice freeze / cancel your username, password, restrict the use of this Website or terminate your membership for any reason, if Heath Matthews Physio in its sole discretion believes that you have violated or acted inconsistently with these Terms in any way. You further agree that Heath Matthews Physio, at its sole discretion, without prior notice, may discontinue the product offered for sale previously on the Website for any reason.
+    You agree that Heath Matthews Physio shall not be liable to you or any third party for any interference with or termination of your access to any Service or discontinuation, modification and/or suspension of any product offered for sale. On termination of your account, any and all Contents existing in your account or any and all activity from your account shall be irretrievably deleted.<br>
+    You further understand and agree that the payment made by you for the products shall not be refunded in the event of discontinuation and/or cancellation of usage of products by You.<br>
+</p><br>
+    <h4>9. REPRESENTATIONS AND WARRANTIES</h4><br>
+<p>
+    The services of this Website are provided by the copyright holders and contributors "as is" and on an “as available” basis and Heath Matthews Physio, its officers, directors, employees, and agents makes no and hereby disclaims any express or implied warranties, including, but not limited to, the implied warranties (collectively, “warranties”) of merchantability and fitness for a particular purpose are disclaimed. In no event shall the copyright holder or contributors be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this Website, even if advised of the possibility of such damage.
+    You agree that your use of the Website and its contents including but not limited to the exercise videos shall be at your sole risk. To the fullest extent permitted by law, Heath Matthews Physio disclaims all warranties, express or implied, in connection with the services and your use thereof.<br>
+    Heath Matthews Physio makes no representations or guarantees that the Website will be free from loss, destruction, damage, any unauthorized access to or use of our secure servers and/or any and all personal information and/or financial information stored therein, corruption, attack, any interruption or cessation of transmission to or from our services, any bugs, viruses, Trojan horses, or the like which may be transmitted to or through our services by any third party, and/or any errors or omissions in any content or for any loss or damage of any kind incurred as a result of the use of any Services, products, contents posted, emailed, transmitted, or otherwise made available via the Website and all related Services. Heath Matthews Physio does not warrant, endorse, guarantee, or assume responsibility for any product or service advertised or offered by a third party through the services or any hyperlinked services or featured in any banner or other advertising, and Heath Matthews Physio will not be a party to or in any way be responsible for monitoring any transaction between you and third-party providers of products or services. As with the purchase of a product or service through any medium or in any environment, you should use your best judgment and exercise caution, interference, personal injury or property damage, of any nature whatsoever, resulting from your access to and use of our Website and related Services, hacking, or other security intrusion, and Heath Matthews Physio disclaims any liability relating thereto.<br>
+    Heath Matthews Physio makes no guarantees, representations, or warranties that use or results of the use of the Website and all related Services will be accurate, timely, reliable, uninterrupted, or without errors. Without prior notice, Heath Matthews Physio may modify, suspend, or discontinue any part or all of the Website and all related Services or your use of the Website. In such event, Heath Matthews Physio shall not be liable to you or any third party.<br>
+    Heath Matthews Physio makes no guarantees, representations, or warranties that any files available for downloading through the Website shall be free of viruses or similar contamination or destructive features. You agree that you assume all risk as to the quality and performance of the Website and the accuracy and completeness of the contents.<br>
+    Some of the content, products, and services available through the Website may include materials that belong to third parties. You acknowledge that Heath Matthews Physio assumes no responsibility for such content, products, or services.
+    <br>
+</p>
+<br>
+    <h4 id="privacy">10. PRIVACY AND PROTECTION OF PERSONAL DATA</h4><br>
+<p>
+    Your Privacy and data protection is important to us. This Website may collect some of your personal information and data such as about name, postal address, email address, other contact information, age, interests, gender, IP addresses and other personal data while accessing, availing and/or using the Website. Our Website is intended for the general audience, and this Website does not knowingly collect personal data about any person under the age of 18 years. We process personal data for the following purposes:<br>
+    Provision of Heath Matthews Physio’s services and products (if any) and to accommodate your requests and inquiries.<br>
+    Provision of newsletters/offers offered by Heath Matthews Physio.<br>
+    Heath Matthews Physio may transfer personal data collected by us on an aggregated or individual level to various divisions, subsidiaries and health partners of Heath Matthews Physio Personal data will not be disclosed to anyone outside the Heath Matthews Physio without your consent unless permitted or required under applicable legislation.<br>
+    We delete or anonymize your personal data when it is no longer needed for the purposes for which it was collected and subsequently processed.<br>
+    If you have submitted personal data to us, e.g. when registering for membership, you enjoy certain rights to access and rectify data, however, subject to certain legal limitations.<br>
+    Such information collected is only attributed to the functionality of the Website and for no other purpose whatsoever. Heath Matthews Physio reserves the right to collect/upgrade/retain information relating to device and application/software/platform in order to provide you the best possible service/products/system upgrade. You agree to provide such details and/feedback as may be periodically required by Heath Matthews Physio to monitor the progress and requisite response, as the case may be. You may read Heath Matthews Physio’s detailed Privacy Policy by visiting the following link here (https://heathmatthewsphysio.com/pages/privacy). Or you may contact us to learn more about our Privacy Policy.
+    <br>
+</p>
+    <h4>11. COOKIES</h4><br>
+<p>
+    Our website uses cookies. A cookie is a small text file, which is stored on your computer in order to recognize your computer at recurring visits. The cookie may transmit information via your browser with a purpose of authenticating or identifying the computer (via e.g. the IP address) or the user. Cookies may contain information such as registration data and user preferences. When a server receives a request from a computer which stores a cookie from the website, the server is able to use the information stored in the cookie in combination with the information stored on the server. A cookie cannot collect information from your computer and cannot carry any virus or other damaging files.<br>
+    The following third parties store the following cookies on this website:<br>
+    (Note: This is only in case we have any of the logins via the following website now or in near future and the following can also be removed in case not needed)
+    Google Analytics and Google DoubleClick (provided by Google Inc.) to enable us (a) to perform statistical analyses of e.g. number of visitors, information on gender, age, location, interests and the like to learn about our visitors and (b) to improve the website friendliness and usability, e.g. on the basis of website traffic measurements<br>
+    You Tube (provided by YouTube LLC.) to store session preferences (e.g. language) and suggest other content based on your previous uses (only activated when you are logged in to You Tube when visiting our website and only when clicking the YouTube button)
+    Facebook (provided by Facebook, Inc.) to identify users logged in to Facebook for the purpose of sharing content on Facebook (only when you are logged in to Facebook when visiting our website and only when clicking the Facebook button)
+    LinkedIn (provided by LinkedIn Corp.) to enable us (a) to enable the “follow” and “share” features of LinkedIn (only when you are logged in to LinkedIn when visiting our website and only when clicking the LinkedIn button), and (b) to perform statistical analyses of information on business demographics to learn about our visitors
+    Twitter (provided by Twitter, Inc.) to aggregate anonymous visitor information about the audience that visits the Heath Matthews Physio website and provide Heath Matthews Physio with insight that allows the improvement of digital marketing relevance.
+    Instagram (provided by Instagram, Inc.) to enable us to (a) upload “videos” and “photos” features of Instagram (only when you are logged in to Instagram when visiting our website and only when clicking the Instagram button), and (b) to expand and run a statistical analysis of information of business demographics and to learn about our followers or visitors.
+    You may delete cookies if you no longer wish to store them on your computer. However, please note that the high quality of our website may be reduced as a consequence thereof.<br>
+</p>
+    <h4>12. DISCLAIMERS</h4><br>
+<p>
+    THE WEBSITE AND ALL CONTENTS AND SERVICES ACCESSED THROUGH THE WEBSITE OR OTHERWISE, ARE PROVIDED “AS IS”, “AS AVAILABLE”, AND “WITH ALL FAULTS”.
+    You acknowledge and undertake that you are accessing the services on the website and transacting at your own risk and are using your best and prudent judgment before entering into any transactions through the website. You further acknowledge and undertake that you will use the website to order products only for your personal use and not for business purposes unless agreed otherwise through an agreement and to receive the media content made available through the Website, based on the type of account you hold. Your correspondence or business dealings with, or participation in promotions of, advertisers found on or through the Website, including payment and delivery of related products or Services, and any other terms, conditions, warranties or representations associated with such dealings, are solely between you and such advertiser. We shall not be responsible or liable for any loss or damage of any sort incurred as the result of any such dealings or as the result of the presence of such advertisers on the Website.
+    Heath Matthews Physio shall have all the rights to take necessary action and claim damages that may occur due to your involvement/participation in any way on your own or through group/s of people, intentionally or unintentionally in DoS/DDoS (Distributed Denial of Services).<br>
+</p>
+    <h4>12. INTELLECTUAL PROPERTY</h4><br>
+<p>
+    All content included on the website, such as text, graphics, logos, button icons, images, audio clips, video clips, digital downloads, data compilations, and software, is the property of Heath Matthews Physio’s, its health partners or its content suppliers and is protected by Indian and International copyright, authors' rights and database right laws. The compilation of all content on this website is the exclusive property of Heath Matthews Physio’s, and its health partners and is protected by laws of Indian and International copyright and database right laws.
+    You may not systematically extract/ or re-utilize parts of the contents of the website without Heath Matthews Physio’s, and / or its health partners (as may be applicable) express written consent. In particular, you shall not reproduce, transmit, republish, upload, post, perform, broadcast, adapt, parody, distribute, display, license and/or alter in whole or in part any of the foregoing in any manner without the express permission from us
+    You shall not download, upload or encourage others to download or upload copyrighted works, trademarks, or other proprietary information without obtaining the prior written consent of the owner of the contents. In the event of infringement Heath Matthews Physio has and on its own sole discretion take necessary steps.<br>
+</p><br>
+    <h4>13. INDEMNITY</h4><br>
+<p>
+    You shall indemnify and hold Heath Matthews Physio, its subsidiaries, health partners and their respective officers, directors, agents and employees harmless from any claim or demand, or actions including reasonable attorney's fees and expenses made by any third party or penalty imposed due to or arising out of your breach of these Conditions of Use or any document incorporated by reference, or your violation of any law, rules, regulations or the rights of a third party.
+    You hereby expressly release Heath Matthews Physio and/or its health partners and/or any of its officers and representatives from any cost, damage, liability or other consequence of any of the actions/inactions of the advertisers and specifically waiver any claims or demands that you may have in this behalf under any statute, contract or otherwise.<br>
+</p><br>
+    <h4>14. LIABILITY</h4><br>
+
+    TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL HEATH MATTHEWS PHYSIO BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, PUNITIVE, SPECIAL OR CONSEQUENTIAL DAMAGES, FOR LOSS OF PROFITS OR CONFIDENTIAL OR OTHER INFORMATION, FOR BUSINESS INTERRUPTION, FOR PERSONAL INJURY, FOR LOSS OF PRIVACY, FOR FAILURE TO MEET ANY DUTY INCLUDING OF GOOD FAITH OR OF REASONABLE CARE, FOR NEGLIGENCE, AND FOR ANY OTHER PECUNIARY OR OTHER LOSS WHATSOEVER ARISING OUT OF OR IN ANY WAY RELATED TO THE USE OR INABILITY TO USE THE WEBSITE AND ANY LOSS OR DAMAGE ARISING OUT OF OR IN RELATION TO ACTS OF GOD OR ACT OF THIRD PARTY THAT IS BEYOND THE CONTROL OF Heath Matthews Physio.<br>
+    <br>
+    <h4>15. LAW, JURISDICTION AND ARBITRATION</h4><br>
+<p>
+    These conditions are governed by and construed in accordance with the laws of India. You agree, as we do, to submit to the exclusive jurisdiction of the courts at Mumbai and no other court, over any claim arising from, or related to, a visit to our site although we retain the right to bring proceedings against you for breach of these conditions.<br>
+
+    GOVERNING LAW &amp; ARBITRATION<br>
+
+    a) This Agreement shall be governed by the laws of India. The Courts in Mumbai shall have exclusive jurisdiction over the subject matter of this Agreement.
+    b) All disputes arising under or in relation to this Terms shall be referred to arbitration before a sole arbitrator. If the Parties fail to agree on the appointment of a sole arbitrator in the event of any dispute or differences arising out of or in connection with this agreement, then the parties hereto, agree to resolve their dispute by a sole arbitrator chosen by the parties in fast track procedure under the provision of Section 29 B of [Indian] Arbitration and Conciliation Act, 1996 (the “Act”). The award under this section shall be made within a period of 6 months from the date of commencement of the arbitral tribunal proceedings.<br>
+    c) The arbitration proceedings shall be conducted in English. The place of Arbitration shall be Mumbai. The award passed in the arbitration proceedings shall be final and binding on both the parties.
+    d) The cost of arbitration proceedings shall be equally borne by both the parties.
+    e) Each party shall individually bear the fees of their respective Advocate/Counsel for the proceedings.<br>
+
+    16. SEVERABILITY<br>
+    If any provision in this Terms becomes invalid or illegal or adjudged unenforceable, the provision shall be deemed to have been severed from this Terms and the remaining provisions of this Terms shall not, so far as possible, be affected by the severance.<br>
+</p><br>
+    <h4>17. WAIVER</h4><br>
+
+    <p>The failure of the Heath Matthews Physio to enforce at any time any of the provisions of this Terms shall not be construed to be a waiver of its right, power, privilege or remedy or as a waiver of any preceding.
+    The failure/breach on your behalf to comply with Heath Matthews Physio’s conditions and we take no action, we will still be entitled use our rights and remedies in any other situation where you breach these conditions.
+    Heath Matthews Physio also does not take responsibility of any physical contact may occur between the members or any Health Members of Heath Matthews Physio and/or other members of the Program and consents to that contact being made. The member warrants that it shall not hold the Heath Matthews Physio or any other member of the Program responsible for any injury or illness suffered in respect of such contact unless such contact is premeditatedly malicious to cause injury or illness. Subject to the law, the Member releases Heath Matthews Physio from all losses, claims, costs, liabilities, expenses, suits, damages and action as a result of any negligence caused by Health Member of Heath Mathews Physio. It is also pertinent to note that Heath Matthews Physio is not liable for any kind of deficiency caused by any of the Health Member of Heath Matthews Physio.
+    18. FORCE MAJEURE AND ACT OF THIRD PARTIES
+    The performance of any part of this agreement by Heath Matthews Physio shall be excused to the extent that such performance is hindered, delayed, or made impractical by flood, fire, war, or riot or any other cause beyond the reasonable control of Heath Matthews Physio or act of any third party beyond the control of Heath Matthews Physio including but not limited to hacking, data theft, unauthorized access to your account, impersonation, fraud, misrepresentation and so on.<br>
+</p>
+    <h4>19. ALTERATION OR AMENDMENTS TO THE CONDITIONS</h4><br>
+
+    Heath Matthews Physio can update, modify, suspend, discontinue or change any part of these Terms from time to time The revised Terms will be posted as notification here on this Website. Member/ Users are encouraged to periodically check this page to stay informed about changes to our Terms. The revised Terms will be effective from the modified date. You acknowledge and agree that it is your responsibility to review these Terms periodically and be aware of modifications. If you disagree to any of the changes to the Terms, please refrain from accessing, using or availing the services of the Website. Your continued access or use or availing of the Website following the posting of revised Terms will indicate your acceptance and acknowledgement of the changes and you will be bound by it.<br>
+    <br>
+    <h4>20. NOTICES AND TAKE DOWN POLICY</h4><br>
+
+    <p>This notice is specifically given that Heath Matthews Physio is not responsible for the contents. All notices to Heath Matthews Physio hereunder shall be in writing and shall be duly given if delivered personally or sent by registered mail, return receipt requested, or facsimile to the following Address or emailed to the following email id: support@heathmatthewsphysio.com
+    HMJ Health Pvt. Ltd., 308, Apeejay House, 130, Shahid Bhagat Singh Marg, Mumbai, Maharashtra 400 001, India. This document is an electronic record as per the terms of Information Technology Act, 2000 and rules there under as applicable and the amended provisions pertaining to electronic records in various statutes as amended by the Information Technology Act, 2000. This electronic record is generated by a computer system and does not require any physical or digital signatures.
+    This document is published in accordance with the provisions of Rule 3 (1) &amp; (2) of the Information Technology (Intermediaries guidelines) Rules, 2011 that require publishing the rules and regulations, Privacy Policy and Terms for access or usage of Heath Matthews Physio Website.
+    I have read and understood the Terms and Conditions and I hereby, out of my free will, unconditionally accept to be bound by the same.<br>
+</p>
+    <h6 style="color: black;">Last Modified: July 2018</h6>
+
+
+<p></p>
+
+<style type="text/css">
+    .row.justify-content-center, p{
+        font-weight: 500;
+        font-size: 15px;
+        color: black;
+        text-align: justify;
+    }
+    h4 {
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+    }	
+</style>
+
+
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+    <!-- ========================
+      Footer
+    ========================== -->
+    <footer class="footer">
+      <div class="footer-primary">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-3">
+              <div class="footer-widget-about">
+                <!-- <img src="assets/images/logo/logo-light.png" alt="logo" class="mb-30" style="filter: drop-shadow(10px 10px 10px black);"> -->
+                <style>
+                  
+#logo {
+  position: relative;
+  width: 300px;
+  aspect-ratio: 1000 / 556;
+  user-select: none;
+  margin: 0 auto;
+}
+
+#logo > img {
+  width: 100%;
+  position: absolute;
+}
+                </style>
+                <div id="logo">
+                  <img src="assets/images/logo/logo-no-text.png" style="filter: brightness(0) invert(1);" draggable="false" />
+                  <img src="assets/images/logo/logo-no-text.png" draggable="false" />
+                  <!-- <img src="assets/images/logo/logo-no-text.png" style="filter: brightness(0) invert(1);" draggable="false" /> -->
+                  <!-- <img src="assets/images/logo.png" draggable="false" /> -->
+                  <!-- <img src="assets/images/logo.png" draggable="false" /> -->
+                </div>
+                <img src="assets/images/logo/logo-text.png" style="margin-top: -100px; margin-left: auto;margin-right: auto;" />
+                
+              
+                <p class="color-gray">Our goal is to deliver quality of care in a courteous, respectful, and
+                  compassionate manner. We hope you will allow us to care for you and strive to be the first and best
+                  choice for your family healthcare.
+                </p>
+                <a href="appointment.html" class="btn btn__primary btn__primary-style2 btn__link">
+                  <span>Make Appointment</span> <i class="icon-arrow-right"></i>
+                </a>
+              </div><!-- /.footer-widget__content -->
+            </div><!-- /.col-xl-2 -->
+            <div class="col-sm-6 col-md-6 col-lg-2 offset-lg-1">
+              <div class="footer-widget-nav">
+                <h6 class="footer-widget__title">Tools</h6>
+                <nav>
+                  <ul class="list-unstyled">
+                    <li><a href="#">BMR Calculator</a></li>
+                    <li><a href="#">Macro Calculator</a></li>
+                    <li><a href="#">Body Fat</a></li>
+                    <li><a href="#">1RM Calculator</a></li>
+                  </ul>
+                </nav>
+              </div><!-- /.footer-widget__content -->
+            </div><!-- /.col-lg-2 -->
+            <div class="col-sm-6 col-md-6 col-lg-2">
+              <div class="footer-widget-nav">
+                <h6 class="footer-widget__title">Links</h6>
+                <nav>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Health Partners</a></li>
+                    <li><a href="#">Our Gallery</a></li>
+                    <li><a href="#">Our Blogs</a></li>
+                    <li><a href="#">Appointments</a></li>
+                  </ul>
+                </nav>
+              </div><!-- /.footer-widget__content -->
+            </div><!-- /.col-lg-2 -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="footer-widget-contact">
+                <h6 class="footer-widget__title color-heading">Quick Contacts</h6>
+                <ul class="contact-list list-unstyled">
+                  <li>If you have any questions or need help, feel free to contact with our team.</li>
+                  <li>
+                    <a href="tel:+918928444854" class="phone__number">
+                      <i class="icon-phone"></i> <span>+91 8928 444 854 / 855</span>
+                    </a>
+                  </li>
+                  <li class="color-body">501, Grand Imperial Apartments, 16th Rd, Khar West, Mumbai, Maharashtra 400052</li>
+                  <center><a href="https://goo.gl/maps/tC4RTNhbB2qDcujL8" class="btn btn__primary btn__link">
+                    <i class="icon-arrow-right"></i> <span>Get Directions</span>
+                  </a></center>
+                </ul>
+                <div class="d-flex align-items-center">
+                  <ul class="social-icons list-unstyled mb-0">
+                    <li><a href="https://www.facebook.com/heathmatthewsphysioofficial"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/hm_heathmatthewsphysio/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/Jiofit1"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/heathmatthewsphysio"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.youtube.com/c/HeathMatthews"><i class="fab fa-youtube"></i></a></li>
+                  </ul><!-- /.social-icons -->
+                </div>
+              </div><!-- /.footer-widget__content -->
+            </div><!-- /.col-lg-2 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.footer-primary -->
+      <div class="footer-secondary">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <span class="fz-14">&copy; 2023 All Rights Reserved. With Love by</span>
+              <a class="fz-14 color-primary" href="index.html">HMP</a>
+            </div><!-- /.col-lg-6 -->
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <nav>
+                <ul class="list-unstyled footer__copyright-links d-flex flex-wrap justify-content-end mb-0">
+                  <li><a href="terms.html">Terms & Conditions</a></li>
+                  <li><a href="terms.html">Privacy Policy</a></li>
+                  <li><a href="terms.html">Cookies</a></li>
+                </ul>
+              </nav>
+            </div><!-- /.col-lg-6 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.footer-secondary -->
+    </footer><!-- /.Footer -->
+    <div class="search-popup">
+      <button type="button" class="search-popup__close"><i class="fas fa-times"></i></button>
+      <form class="search-popup__form">
+        <input type="text" class="search-popup__form__input" placeholder="Type Words Then Enter">
+        <button class="search-popup__btn"><i class="icon-search"></i></button>
+      </form>
+    </div><!-- /. search-popup -->
+    <button id="scrollTopBtn"><i class="fas fa-long-arrow-alt-up"></i></button>
+  </div><!-- /.wrapper -->
+
+  
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+<script src="https://md-aqil.github.io/images/swiper.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    const logo = document.getElementById("logo"),
+      images = logo.querySelectorAll("img");
+
+const getActive = () => document.body.dataset.active === "true",
+      setActiveTo = active => document.body.dataset.active = active;
+
+const shift = (image, index, rangeX, rangeY) => {
+  const active = getActive();
+        
+  const translationIntensity = active ? 24 : 4,
+        maxTranslation = translationIntensity * (index + 1),
+        currentTranslation = `${maxTranslation * rangeX}% ${maxTranslation * rangeY}%`;
+  
+  const scale = active ? 1 + (index * 0.4) : 1;
+  
+  image.animate({ 
+    translate: currentTranslation, 
+    scale 
+  }, { duration: 750, fill: "forwards", easing: "ease" });
+}
+
+const shiftAll = (images, rangeX, rangeY) => 
+  images.forEach((image, index) => shift(image, index, rangeX, rangeY));
+
+const shiftLogo = (e, images) => {  
+  const rect = logo.getBoundingClientRect(),
+        radius = 1000;
+  
+  const centerX = rect.left + (rect.width / 2),
+        centerY = rect.top + (rect.height / 2);
+  
+  const rangeX = (e.clientX - centerX) / radius,
+        rangeY = (e.clientY - centerY) / radius;
+  
+  shiftAll(images, rangeX, rangeY);
+}
+
+const resetLogo = () => {
+  setActiveTo(false);
+  shiftAll(images, 0.4, -0.7);
+}
+
+window.onmousemove = e => shiftLogo(e, images);
+
+document.body.onmouseleave = () => {
+  if(!getActive()) resetLogo();
+}
+
+window.onmousedown = e => {
+  setActiveTo(true);
+  shiftLogo(e, images);
+}
+
+window.onmouseup = e => resetLogo();
+
+resetLogo();
+  </script>
+</body>
+
+</html>
